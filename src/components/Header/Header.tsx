@@ -4,7 +4,11 @@ function Header() {
   return (
     <div className='Header'>
       <div className='header__container'>
-        <img className='header__logo' src={Logo} alt='App logo' />
+        <img
+          className='header__logo'
+          src={Logo}
+          alt='App logo of animated Vince'
+        />
         <ul className='header__nav'>
           <li className='header__nav-item'>Projects</li>
           <li className='header__nav-item'>About</li>

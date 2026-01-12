@@ -1,7 +1,22 @@
 .socials {
   padding: 0;
   display: flex;
-  gap: 12px;
+  gap: 20px;
   list-style-type: none;
   justify-content: center;
+}
+
+.socials__link {
+  display: inline-flex;
+  padding: 6px;
+  border-radius: 8px;
+  color: black;
+}
+
+.socials__link:hover {
+  color: orange;
+}
+
+.socials__icon {
+  display: block;
 }
