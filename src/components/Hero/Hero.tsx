@@ -3,7 +3,7 @@ import { SocialLinks } from '../SocialLinks/SocialLinks';
 import Avatar from '../../assets/avatar-new.jpg';
 function Hero() {
   return (
-    <section className='hero'>
+    <section className='hero' id='hero'>
       <img
         src={Avatar}
         alt='Profile picture of Vince Villanueva'
