@@ -9,7 +9,7 @@ export default function Contact() {
         <header className="contact__header">
           <h2 className="contact__title">Contact</h2>
           <p className="contact__subtitle">
-            Thanks for reaching out, talk to you soon!
+            Want to work together or have a question? Send a message.
           </p>
         </header>
 
@@ -71,6 +71,9 @@ export default function Contact() {
               <a className="contact__button" href="mailto:vvillanueva@gmail.com">
                 Email me instead
               </a>
+              <p className="contact__subtitle">
+            Your submission has been sent! &#9989;
+          </p>
             </div>
           </form>
 

@@ -117,7 +117,6 @@
   border-bottom-color: #000;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .projects__item {
     grid-column: span 12;

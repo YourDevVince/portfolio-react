@@ -76,6 +76,10 @@
 .contact__input:focus-visible,
 .contact__textarea:focus-visible {
   border: solid .5px rgba(242, 242, 242, 0.30);
+  background: linear-gradient(
+    135deg,
+    rgba(205, 205, 205, 0.28),
+    rgba(205, 205, 205, 0.1));
   box-shadow:
     0 10px 25px rgba(0, 0, 0, 0.18);
 }
@@ -155,7 +159,6 @@
   margin: 14px 0 0;
   color: var(--text-subtitle);
 }
-
 
 @media (max-width: 900px) {
   .contact__content {
