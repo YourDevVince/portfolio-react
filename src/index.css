@@ -1,23 +1,36 @@
 @import url(@/vendor/normalize.css);
 @import url(@/vendor/fonts.css);
 
+:root {
+  /* Background */
+  --bg-gradient: linear-gradient(135deg, #0A1020 0%, #2563EB 45%, #F97316 100%);
+ --bg-glass: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.28),
+    rgba(255, 255, 255, 0.10));
+  /* Surfaces */
+  --surface: rgba(255, 255, 255, 0.70);
+  --surface-strong: rgba(255, 255, 255, 0.85);
+
+  /* Text */
+  --text: #0B1220;
+  --text-muted: rgba(11, 18, 32, 0.75);
+  --text-title: rgba(255, 255, 255, 0.85);
+  --text-subtitle: rgba(255, 255, 255, 0.70);
+  /* Borders + radius */
+  --border-color: rgba(242, 242, 242, 0.30); 
+  /* 3px solid #f2f2f2 */
+  --border-width: 2px;
+  --radius: 14px;
+
+  /* Accent */
+  --accent: #F97316;            /* warm orange */
+  
+}
+
 html {
   scroll-behavior: smooth;
 }
-/* :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
 
 @media (prefers-color-scheme: light) {
   :root {

@@ -1,0 +1,113 @@
+
+
+.about__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about__header {
+  margin-bottom: 24px;
+}
+
+.about__title {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.1;
+  color: var(--surface-strong);
+}
+
+.about__subtitle {
+  margin: 10px 0 0;
+  max-width: 65ch;
+  color: var(--surface);
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.about__bio {
+  height: 100%;
+  border-radius: 14px;
+  box-sizing: border-box;
+  padding: 16px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+  border: solid .5px rgba(242, 242, 242, 0.30);
+}
+
+.about__text {
+  margin: 0;
+  color: var(--surface);
+}
+
+.about__text + .about__text {
+  margin-top: 12px;
+}
+
+.about__card {
+  border-radius: 14px;
+  box-sizing: border-box;
+  padding: 16px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+  border: solid .5px rgba(242, 242, 242, 0.30);
+  
+}
+
+.about__card-title {
+  margin: 0;
+  font-size: 16px;
+  color: var(--surface-strong);
+}
+
+.about__list {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: var(--surface);
+}
+
+.about__item {
+  margin-top: 8px;
+}
+
+.about__actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.about__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 12px;
+  border: 2px solid #000;
+  border-radius: 12px;
+
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.about__button:hover,
+.about__button:focus-visible {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 900px) {
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+}

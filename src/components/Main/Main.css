@@ -21,7 +21,7 @@
 }
 
 .main__section {
-  padding: 72px 0;
+  padding: 0 0 72px 0;
   scroll-margin-top: 110px;
 }
 
@@ -36,4 +36,8 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 1.1;
+}
+
+.main__section--hero {
+  padding-top: 72px;
 }

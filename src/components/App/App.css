@@ -1,5 +1,5 @@
 .app {
-  background-color: #f3f3f3;
+  background-image: var(--bg-gradient);
   font-family: CabinetGrotesk, Arial, Helvetica, sans-serif;
 }
 
@@ -10,6 +10,7 @@
   padding: 0 20px;
   display: flex;
   flex-direction: column;
+  color: var(--text);
 }
 
 @keyframes logo-spin {

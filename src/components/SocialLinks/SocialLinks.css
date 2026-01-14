@@ -10,7 +10,8 @@
   display: inline-flex;
   padding: 6px;
   border-radius: 8px;
-  color: black;
+  color: var(--surface);
+  transition: ease-in .2s;
 }
 
 .socials__link:hover {
