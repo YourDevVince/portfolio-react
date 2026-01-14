@@ -38,7 +38,6 @@
 }
 
 .contact__form {
-  /* border: 2px solid #000; */
   border-radius: 14px;
   padding: 16px;
   display: grid;
@@ -100,7 +99,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 10px 12px;
   background: var(--bg-glass);
   backdrop-filter: blur(16px) saturate(160%);
@@ -108,11 +106,11 @@
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
   border: solid .5px rgba(242, 242, 242, 0.30);
   border-radius: 12px;
-
+  transition: ease-in .2s;
   font-weight: 600;
   color: var(--text-title);
-  
   text-decoration: none;
+  text-decoration-color: orange;
   cursor: pointer;
 }
 
@@ -121,6 +119,9 @@
 .contact__button:hover,
 .contact__button:focus-visible {
   text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 .contact__card {
@@ -148,11 +149,12 @@
   text-decoration: none;
   border-bottom: 2px solid transparent;
   font-weight: 600;
+  transition: ease-in .2s;
 }
 
 .contact__link:hover,
 .contact__link:focus-visible {
-  border-bottom-color: #000;
+  border-bottom-color: orange;
 }
 
 .contact__note {

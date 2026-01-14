@@ -3,7 +3,7 @@ import Logo from '../../assets/vince-logo.png';
 
 function Header() {
   return (
-    <header className='header'>
+    <header id='header'  className='header'>
       <div className='header__container'>
         <a className='header__logo-link' href='#hero' aria-label='Go to top'>
           <img
