@@ -1,32 +1,105 @@
+import { useState, useEffect } from 'react';
+import Hamburger from 'hamburger-react';
 import './Header.css';
 import Logo from '../../assets/vince-logo.png';
 
-function Header() {
-  return (
-    <header id='header'  className='header'>
-      <div className='header__container'>
-        <a className='header__logo-link' href='#hero' aria-label='Go to top'>
-          <img
-            className='header__logo'
-            src={Logo}
-            alt='App logo of animated Vince'
-          />
-        </a>
+function isMobileWidth() {
+  return window.innerWidth < 750;
+}
 
-        <nav className='header__nav-container' aria-label='Primary'>
-          <ul className='header__nav'>
-            <li className='header__nav-item'>
-              <a className='header__nav-link' href='#projects'>Projects</a>
-            </li>
-            <li className='header__nav-item'>
-              <a className='header__nav-link' href='#about'>About</a>
-            </li>
-            <li className='header__nav-item'>
-              <a className='header__nav-link' href='#contact'>Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+function Header() {
+  const [isMobile, setIsMobile] = useState(isMobileWidth());
+  const [isOpen, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const startY = window.scrollY;
+
+    const handleScroll = () => {
+      if (Math.abs(window.scrollY - startY) > 10) {
+        setOpen(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isOpen]);
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setIsMobile(isMobileWidth());
+    }
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+
+  return (
+    <header id='header' className='header'>
+      {isMobile ? (
+        <div className='header__container_type-mobile'>
+          <div className='header__container-mobile-block'>
+            <a
+              className='header__logo-link'
+              href='#hero'
+              aria-label='Go to top'
+            >
+              <img
+                className='header__logo'
+                src={Logo}
+                alt='App logo of animated Vince'
+              />
+            </a>
+            <Hamburger toggled={isOpen} toggle={setOpen} />
+          </div>
+
+          <div
+            className={`header__mobile-menu ${
+              isOpen ? 'header__mobile-menu_open' : ''
+            }`}
+          >
+            <div className='header__mobile-menu-container'>
+              <a href='#header'>Home</a>
+              <a href='#projects'>Projects</a>
+              <a href='#about'>About</a>
+              <a href='#contact'>Contact</a>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div className='header__container'>
+          <a className='header__logo-link' href='#hero' aria-label='Go to top'>
+            <img
+              className='header__logo'
+              src={Logo}
+              alt='App logo of animated Vince'
+            />
+          </a>
+          <nav className='header__nav-container' aria-label='Primary'>
+            <ul className='header__nav'>
+              <li className='header__nav-item'>
+                <a className='header__nav-link' href='#projects'>
+                  Projects
+                </a>
+              </li>
+              <li className='header__nav-item'>
+                <a className='header__nav-link' href='#about'>
+                  About
+                </a>
+              </li>
+              <li className='header__nav-item'>
+                <a className='header__nav-link' href='#contact'>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
