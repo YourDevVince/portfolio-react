@@ -7,6 +7,12 @@ function isMobileWidth() {
   return window.innerWidth < 750;
 }
 
+const navLinks = [
+  { label: 'Projects', href: '#projects' },
+  { label: 'About', href: '#about' },
+  { label: 'Contact', href: '#contact' },
+];
+
 function Header() {
   const [isMobile, setIsMobile] = useState(isMobileWidth());
   const [isOpen, setOpen] = useState(false);
@@ -63,10 +69,16 @@ function Header() {
             }`}
           >
             <div className='header__mobile-menu-container'>
-              <a href='#header'>Home</a>
-              <a href='#projects'>Projects</a>
-              <a href='#about'>About</a>
-              <a href='#contact'>Contact</a>
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className='header__mobile-link'
+                >
+                  {link.label}
+                </a>
+              ))}
             </div>
           </div>
         </div>

@@ -3,33 +3,49 @@
 
 :root {
   /* Background */
-  --bg-gradient: linear-gradient(135deg, #0A1020 0%, #2563EB 45%, #F97316 100%);
- --bg-glass: linear-gradient(
+  --bg-gradient: linear-gradient(135deg, #0a1020 0%, #2563eb 45%, #f97316 100%);
+  --bg-glass: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.28),
-    rgba(255, 255, 255, 0.10));
+    rgba(255, 255, 255, 0.1)
+  );
   /* Surfaces */
-  --surface: rgba(255, 255, 255, 0.70);
+  --surface: rgba(255, 255, 255, 0.7);
   --surface-strong: rgba(255, 255, 255, 0.85);
 
   /* Text */
-  --text: #0B1220;
+  --text: #0b1220;
   --text-muted: rgba(11, 18, 32, 0.75);
   --text-title: rgba(255, 255, 255, 0.85);
-  --text-subtitle: rgba(255, 255, 255, 0.70);
+  --text-subtitle: rgba(255, 255, 255, 0.7);
   /* Borders + radius */
-  --border-color: rgba(242, 242, 242, 0.30); 
+  --border-color: rgba(242, 242, 242, 0.3);
   /* 3px solid #f2f2f2 */
   --border-width: 2px;
   --radius: 14px;
 
   /* Accent */
-  --accent: #F97316;            /* warm orange */
-  
+  --accent: #f97316; /* warm orange */
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: #061a44;
+}
+
+#root {
+  min-height: 100%;
+  background: inherit;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 @media (prefers-color-scheme: light) {
