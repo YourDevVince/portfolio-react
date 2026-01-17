@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "build:gh": "cross-env VITE_DEPLOY_BASE=/portfolio-react/ vite build",
-    "deploy": "npm run build:gh && gh-pages -d dist -t"
+    "deploy": "npm run build:gh && gh-pages -d dist"
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",

@@ -192,7 +192,7 @@ export default function Contact() {
 
               <a
                 className='contact__button'
-                href='mailto:vvillanueva@gmail.com'
+                href='mailto:vvillanueva@yourdevvince.com'
               >
                 Email me instead
               </a>
@@ -224,8 +224,11 @@ export default function Contact() {
                 </a>
               </li>
               <li className='contact__links-item'>
-                <a className='contact__link' href='mailto:you@email.com'>
-                  vvillanueva@gmail.com
+                <a
+                  className='contact__link'
+                  href='mailto:vvillanueva@yourdevvince.com'
+                >
+                  vvillanueva@yourdevvince.com
                 </a>
               </li>
             </ul>
