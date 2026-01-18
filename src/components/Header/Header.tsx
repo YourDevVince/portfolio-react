@@ -84,13 +84,21 @@ function Header() {
         </div>
       ) : (
         <div className='header__container'>
-          <a className='header__logo-link' href='#hero' aria-label='Go to top'>
-            <img
-              className='header__logo'
-              src={Logo}
-              alt='App logo of animated Vince'
-            />
-          </a>
+          <div className='header__logo-container'>
+            <a
+              className='header__logo-link'
+              href='#hero'
+              aria-label='Go to top'
+            >
+              <img
+                className='header__logo'
+                src={Logo}
+                alt='App logo of animated Vince'
+              />
+            </a>
+            <span className='header__logo-text'>YourDevVince</span>
+          </div>
+
           <nav className='header__nav-container' aria-label='Primary'>
             <ul className='header__nav'>
               <li className='header__nav-item'>

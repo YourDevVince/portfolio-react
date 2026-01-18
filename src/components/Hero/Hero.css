@@ -7,7 +7,7 @@
 .hero__avatar {
   border-radius: 50%;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
-  border: solid .5px rgba(242, 242, 242, 0.30);
+  border: solid 0.5px rgba(242, 242, 242, 0.3);
   width: 180px;
 }
 
@@ -21,11 +21,15 @@
   font-size: 36px;
   margin: 0;
   text-align: center;
-  color: var(--text-title);
+  color: #f2f2f2;
 }
 .hero__titles-sub {
   font-size: 28px;
   margin: 0;
   text-align: center;
   color: var(--text-subtitle);
+}
+
+h3.hero__titles-sub {
+  font-weight: 400;
 }
