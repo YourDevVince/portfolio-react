@@ -51,7 +51,7 @@ export default function Projects() {
                   className='projects__links'
                   aria-label={`${project.title} links`}
                 >
-                  {project.links.map((link) => (
+                  {project.links?.map((link) => (
                     <a
                       key={link.href}
                       className='projects__link'
