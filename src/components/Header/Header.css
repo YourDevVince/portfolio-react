@@ -16,11 +16,7 @@
   padding: 20px;
   justify-content: space-between;
   border-radius: 50px;
-  background: var(--bg-glass);
-  backdrop-filter: blur(16px) saturate(160%);
-  -webkit-backdrop-filter: blur(16px) saturate(160%);
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
-  border: solid 0.5px rgba(242, 242, 242, 0.3);
 }
 
 .header__container_type-mobile {
@@ -33,11 +29,7 @@
   padding: 20px;
   justify-content: space-between;
   border-radius: 50px;
-  background: var(--bg-glass);
-  backdrop-filter: blur(16px) saturate(160%);
-  -webkit-backdrop-filter: blur(16px) saturate(160%);
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
-  border: solid 0.5px rgba(242, 242, 242, 0.3);
 }
 
 .header__container-mobile-block {

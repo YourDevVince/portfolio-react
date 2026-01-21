@@ -15,7 +15,7 @@ export default function Projects() {
         <ul className='projects__grid' aria-label='Projects list'>
           {projects.map((project: (typeof projects)[number]) => (
             <li key={project.id} className='projects__item'>
-              <article className='projects__card'>
+              <article className='projects__card glass'>
                 <header className='projects__card-header'>
                   <h3 className='projects__card-title'>{project.title}</h3>
                   <p className='projects__card-summary'>

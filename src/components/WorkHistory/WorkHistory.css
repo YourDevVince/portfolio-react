@@ -77,20 +77,19 @@
   -webkit-backdrop-filter: blur(16px) saturate(160%);
   border: 0.5px solid var(--border-color);
   border-radius: 999px;
-
   padding: 4px 10px;
   font-size: 12px;
   color: var(--surface-strong);
 }
 
 .work-history__highlights {
-  margin: 12px 0 0;
+  margin: 16px 0 0;
   padding-left: 18px;
   color: var(--surface);
 }
 
 .work-history__highlight {
-  margin-top: 6px;
+  margin-top: 12px;
 }
 
 .work-history__links {

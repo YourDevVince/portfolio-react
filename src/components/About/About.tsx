@@ -12,7 +12,7 @@ export default function About() {
         </header>
 
         <div className='about__content'>
-          <div className='about__bio'>
+          <div className='about__bio glass'>
             <p className='about__text'>
               Front end developer focused on responsive UI, clean components,
               and turning designs into production ready experiences. Most of my
@@ -26,7 +26,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className='about__card'>
+          <div className='about__card glass'>
             <h3 className='about__card-title'>Quick highlights</h3>
 
             <ul className='about__list'>

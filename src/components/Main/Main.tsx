@@ -12,7 +12,7 @@ function Main() {
         <Hero />
       </section>
 
-      <section className='main__section main__section--hero'>
+      <section className='main__section main__section--work-history'>
         <WorkHistory />
       </section>
 

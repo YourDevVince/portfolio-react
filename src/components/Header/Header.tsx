@@ -47,7 +47,7 @@ function Header() {
   return (
     <header id='header' className='header'>
       {isMobile ? (
-        <div className='header__container_type-mobile'>
+        <div className='header__container_type-mobile glass'>
           <div className='header__container-mobile-block'>
             <a
               className='header__logo-link'
@@ -83,7 +83,7 @@ function Header() {
           </div>
         </div>
       ) : (
-        <div className='header__container'>
+        <div className='header__container glass'>
           <div className='header__logo-container'>
             <a
               className='header__logo-link'

@@ -134,7 +134,7 @@ export default function Contact() {
           </p>
         </header>
 
-        <div className='contact__content'>
+        <div className='contact__content glass'>
           <form className='contact__form' onSubmit={handleSubmit}>
             <label className='contact__field'>
               <span className='contact__label'>Name</span>
