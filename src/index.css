@@ -48,7 +48,14 @@ body {
   overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: light) {
+.glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 0.5px solid var(--border-color);
+}
+
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -59,4 +66,4 @@ body {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
