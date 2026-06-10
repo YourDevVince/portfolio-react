@@ -20,7 +20,7 @@ export default function Projects() {
                   <div className='projects__card-image-wrap'>
                     <img
                       className='projects__card-image'
-                      src={project.image}
+                      src={`${import.meta.env.BASE_URL}${project.image.replace(/^\//, '')}`}
                       alt={`${project.title} preview`}
                       loading='lazy'
                     />
