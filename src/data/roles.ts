@@ -31,7 +31,7 @@ export const roles: Role[] = [
       lead: 'ExamSoft supports institutions',
       rest: ' running high stakes exams, and I worked in software support to diagnose issues, document fixes, and escalate bugs.',
     },
-    company: 'Examsoft',
+    company: 'ExamSoft',
     highlights: [
       'Tracked recurring issues and shared patterns with the team to improve documentation and reduce repeat tickets.',
       'Investigated and resolved support tickets by reproducing issues, collecting logs, and identifying root causes.',

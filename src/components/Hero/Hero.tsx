@@ -8,6 +8,8 @@ function Hero() {
         src={Avatar}
         alt='Profile picture of Vince Villanueva'
         className='hero__avatar'
+        loading='eager'
+        fetchPriority='high'
       />
       <div className='hero__titles_container'>
         <h1 className='hero__titles-main'>Vince Villanueva</h1>
