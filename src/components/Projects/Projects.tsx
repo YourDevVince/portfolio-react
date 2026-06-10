@@ -16,53 +16,63 @@ export default function Projects() {
           {projects.map((project: (typeof projects)[number]) => (
             <li key={project.id} className='projects__item'>
               <article className='projects__card glass'>
-                <header className='projects__card-header'>
-                  <h3 className='projects__card-title'>{project.title}</h3>
-                  <p className='projects__card-summary'>
-                    {project.description}
-                  </p>
-                </header>
+                {project.image && (
+                  <div className='projects__card-image-wrap'>
+                    <img
+                      className='projects__card-image'
+                      src={project.image}
+                      alt={`${project.title} preview`}
+                      loading='lazy'
+                    />
+                  </div>
+                )}
+                <div className='projects__card-body'>
+                  <header className='projects__card-header'>
+                    <h3 className='projects__card-title'>{project.title}</h3>
+                    <p className='projects__card-summary'>{project.tagline}</p>
+                  </header>
 
-                <ul
-                  className='projects__tags'
-                  aria-label={`${project.title} tech stack`}
-                >
-                  {project.stack.map((tech) => (
-                    <li key={tech} className='projects__tag'>
-                      {tech}
-                    </li>
-                  ))}
-                </ul>
-
-                {project.highlights?.length ? (
                   <ul
-                    className='projects__highlights'
-                    aria-label={`${project.title} highlights`}
+                    className='projects__tags'
+                    aria-label={`${project.title} tech stack`}
                   >
-                    {project.highlights.map((h) => (
-                      <li key={h} className='projects__highlight'>
-                        {h}
+                    {project.stack.map((tech) => (
+                      <li key={tech} className='projects__tag'>
+                        {tech}
                       </li>
                     ))}
                   </ul>
-                ) : null}
 
-                <footer
-                  className='projects__links'
-                  aria-label={`${project.title} links`}
-                >
-                  {project.links?.map((link) => (
-                    <a
-                      key={link.href}
-                      className='projects__link'
-                      href={link.href}
-                      target='_blank'
-                      rel='noreferrer'
+                  {project.highlights?.length ? (
+                    <ul
+                      className='projects__highlights'
+                      aria-label={`${project.title} highlights`}
                     >
-                      {link.label}
-                    </a>
-                  ))}
-                </footer>
+                      {project.highlights.map((h) => (
+                        <li key={h} className='projects__highlight'>
+                          {h}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+
+                  <footer
+                    className='projects__links'
+                    aria-label={`${project.title} links`}
+                  >
+                    {project.links?.map((link) => (
+                      <a
+                        key={link.href}
+                        className='projects__link'
+                        href={link.href}
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        {link.label}
+                      </a>
+                    ))}
+                  </footer>
+                </div>
               </article>
             </li>
           ))}
