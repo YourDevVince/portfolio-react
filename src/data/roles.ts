@@ -12,16 +12,17 @@ export type Role = {
 export const roles: Role[] = [
   {
     id: 'dsm',
-    title: 'Frontend Devloper/UI Designer',
+    title: 'Frontend Developer',
     description: {
       lead: 'Digital Seat Media builds fan engagement',
-      rest: ' and in venue digital experiences for sports and live events, and I helped design and ship front end features for those products.',
+      rest: ' and in-venue digital experiences for live sports events. I built and maintained customer-facing React/Next.js applications serving NFL, NBA, and NHL campaigns.',
     },
     company: 'Digital Seat Media',
     highlights: [
-      'Built interactive, customer-facing web platforms for live events used by 12K + active users across NFL, NBA, and NHL campaigns.',
-      'Designed and shipped a voting web application for the 2024 Prefontaine Classic, deployed for live event use on a stadium jumbotron.',
-      'Translated Figma prototypes into production-ready code, ensuring pixel-perfect design implementation and WCAG compliance.',
+      'Built and maintained React/Next.js web applications serving 100,000+ active users across NFL, NBA, and NHL campaigns under peak event-night load.',
+      'Architected custom hooks and reusable component libraries that standardized state management patterns and reduced feature delivery time across the team.',
+      'Developed a responsive admin dashboard in Next.js with role-based views, dynamic routing, and strict WCAG accessibility compliance.',
+      'Translated Figma prototypes into pixel-perfect production code, bridging design and engineering across tight Agile sprint cycles.',
     ],
   },
   {
